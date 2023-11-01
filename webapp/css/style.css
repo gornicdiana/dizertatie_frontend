@@ -1,0 +1,144 @@
+.backgroundClass {
+  color: white !important;
+}
+
+.homeBackgroundClass {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splitMenu {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.splitButton {
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.splitButton:hover {
+  opacity: 1;
+  filter: brightness(1.15);
+  background-attachment: fixed;
+  background-size: cover;
+  transition: 0.3s ease;
+}
+
+.therapistName {
+  font-size: larger;
+  color: #435c78f0 !important;
+}
+
+.articleTitle {
+  font-size: xx-large;
+  color: #435c78f0 !important;
+}
+
+.sapMIBar.sapMHeader-CTX {
+  background-color: #02135d !important;
+}
+
+.sapMIBar.sapMHeader-CTX .therapistHeader {
+  background-color: rgb(36, 53, 5) !important;
+}
+
+.sapMIBar-CTX .sapMTitle {
+  color: white;
+}
+
+.sapMLabel {
+  color: #02135d;
+  font-size: larger;
+}
+
+.sapFCard .sapFCardHeader {
+  background: #02135d;
+}
+
+.sapFCard .sapFCardContent {
+  background-color: white !important;
+}
+
+.sapMGenericTag .sapMGenericTagWrap {
+  background-color: white !important;
+}
+
+span.sapMBtnInner.sapMBtnEmphasized {
+  background-color: #b3b8ce !important;
+  border-color: #b3b8ce !important;
+}
+
+.sapMBtnContent {
+  color: #02135d;
+}
+
+.sapUiIcon {
+  color: #02135d;
+}
+
+.sapMPopover .sapMPopoverCont {
+  background-color: white !important;
+}
+
+.buttonClass {
+  opacity: 1 !important;
+}
+
+.sapMDialog > header.sapMDialogTitle .sapMTitle {
+  color: white;
+}
+
+.sapMBtnIcon {
+  color: #0854a0 !important;
+}
+
+.therapistProfile {
+  background-color: white !important;
+}
+
+/* .sapMTitle {
+  color: #02135d !important;
+} */
+
+.sapMFT {
+  color: #02135d;
+  font-size: medium;
+}
+
+.sapMFT .slideText {
+  color: white !important;
+  font-size: medium;
+}
+
+.sapMTileCnt.News .sapMTileCntFtrTxt {
+  font-size: medium;
+}
+
+.sapMTileCnt.News {
+  background-color: rgb(7 55 102 / 58%);
+  height: 4.5rem;
+  margin-top: 1.8rem;
+}
+
+.sapMInputBaseInner {
+  background-color: white;
+  color: #4e5a8e;
+}
+
+.sapFGLI {
+  grid-area: span 4 / span 6 / auto / auto;
+}
+
+.sapMLabel .sapMLabelTextWrapper {
+  font-size: medium;
+}
+
+html,
+body,
+body > div,
+#container,
+#container-uiarea {
+  height: 0%;
+}
