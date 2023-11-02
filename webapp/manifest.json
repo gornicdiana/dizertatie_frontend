@@ -72,10 +72,6 @@
                     "earlyRequests": true,
                     "groupId": "$direct"
                 }
-            },
-            "category": {
-                "type": "sap.ui.model.json.JSONModel",
-                "uri": "utils/Categories.json"
             }
 
         },
@@ -99,7 +95,7 @@
             "routes": [
                 {
                     "name": "Home",
-                    "pattern": "Home",
+                    "pattern": "",
                     "target": ["Home"]
                 }
             ],
