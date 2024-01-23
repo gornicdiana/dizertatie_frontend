@@ -1,0 +1,33 @@
+<mvc:View controllerName="ui5Starter.controller.Home"
+   xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.f"
+	xmlns:card="sap.f.cards">
+    <Page id="loginPage" class="sapUiResponsiveContentPadding backgroundClass" title="{i18n>login}" titleAlignment="Center" showNavButton="true" navButtonPress="onGoBackToWelcome" backgroundDesign="Transparent">
+		<content>
+			<VBox alignItems="Center" width="100%" height="100%">
+				<f:Card class="sapUiMediumMargin cardClass" width="500px" height="600px">
+					<f:content>
+						<VBox id="formVBox" alignItems="Center" justifyContent="Center" class="sapUiLargeMarginTop" width="100%" height="100%">
+							<core:Icon src="sap-icon://customer" size="2.5rem"/>
+							<Label text="{i18n>login}"/>
+							<VBox id="inputsVBox" class="sapUiSmallMargin" justifyContent="Center" alignItems="Center" width="100%">
+								<Label id="emailLabelID" class="sapUiSmallMarginTop" text="{i18n>emailLabel}"/>
+								<Input id="emailInputID" class="sapUiTinyMarginTop" type="Email" placeholder="{i18n>emailInput}" value="{loginModel>/email}" width="250px"/>
+								<Label id="passwordLabelID" class="sapUiSmallMarginTop" text="{i18n>passwordLabel}"/>
+								<Input id="passwordInputID" class="sapUiTinyMarginTop" type="Password" placeholder="{i18n>passwordInput}" value="{loginModel>/password}" width="250px"/>
+							</VBox>
+							<Button id="loginButton" type="Emphasized" text="{i18n>login}" press="pressLogin" class="sapUiTinyMarginTop"/>
+							<VBox id="buttonsHBox" alignItems="Center" class="sapUiMediumMarginTop" width="100%" height="100%">
+								<Label id="registerLabelID" text="{i18n>registerText}"/>
+								<Button id="registerButton" type="Transparent" text="{i18n>registerBtn}" press="goToRegister"/>
+							</VBox>
+						</VBox>
+					</f:content>
+				</f:Card>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

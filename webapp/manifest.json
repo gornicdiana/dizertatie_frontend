@@ -97,6 +97,21 @@
                     "name": "Home",
                     "pattern": "",
                     "target": ["Home"]
+                },
+                {
+                    "name": "Login",
+                    "pattern": "Login",
+                    "target": ["Login"]
+                },
+                {
+                    "name": "Register",
+                    "pattern": "Register",
+                    "target": ["Register"]
+                },
+                {
+                    "name": "Pacient",
+                    "pattern": "Pacient",
+                    "target": ["Pacient"]
                 }
             ],
             "targets": {
@@ -104,6 +119,21 @@
                     "viewId": "Home",
                     "viewType": "XML",
                     "viewName": "Home"
+                },
+                "Login": {
+                    "viewId": "Login",
+                    "viewType": "XML",
+                    "viewName": "Login"
+                },
+                "Register": {
+                    "viewId": "Register",
+                    "viewType": "XML",
+                    "viewName": "Register"
+                },
+                "Pacient": {
+                    "viewId": "Pacient",
+                    "viewType": "XML",
+                    "viewName": "Pacient"
                 }
             }
         }

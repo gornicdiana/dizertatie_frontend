@@ -1,5 +1,5 @@
 <mvc:View controllerName="ui5Starter.controller.App"
 	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
 	xmlns="sap.m">
-	<App id="app"/>
+	<App id="app" backgroundImage="utils/img/app-background.jpg" backgroundOpacity="0.8"/>
 </mvc:View>
