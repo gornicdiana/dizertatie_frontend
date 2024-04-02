@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <Dialog id="adaugaPacientId" type="Confirmation" title="Adauga un nou pacient" titleAlignment="Center" resizable="true" draggable="true">
+        <content>
+            <f:SimpleForm editable="true" layout="ResponsiveGridLayout">
+                <f:content>
+                    <Label text="CNP" labelFor="cnpNouID"/>
+                    <Input required="true" value="{datePacientNou>/cnp}" id="cnpNouID" liveChange="typeCNP" valueState="{datePacientNou>/valueState}" valueStateText="{datePacientNou>/textValueState}"/>
+                    <Label text="Nume" labelFor="numeID"/>
+                    <Input required="true" id="numeID" value="{datePacientNou>/nume}"/>
+                    <Label text="Prenume" labelFor="prenumeID"/>
+                    <Input required="true" id="prenumeID" value="{datePacientNou>/prenume}"/>
+                    <Label text="Adresa" labelFor="adresaID"/>
+                    <Input required="true" id="adresaID" value="{datePacientNou>/adresa}"/>
+                    <Label text="Adresa de email"/>
+                    <Input value="{datePacientNou>/email}"/>
+                    <Label text="Numar de telefon" labelFor="nrID"/>
+                    <Input required="true" id="nrID" value="{datePacientNou>/telefon}"/>
+                    <Label text="Data nasterii" labelFor="dataNastereID"/>
+	                <DatePicker required="true" id="dataNastereID" value="{datePacientNou>/dataNastere}" valueFormat="yyyy-MM-dd"/>
+                    <Label text="Sex"/>
+                    <RadioButtonGroup id="sexID" select="selectSex">
+                        <RadioButton text="Masculin" id="sexMID"/>
+                        <RadioButton text="Feminin" id="sexFID"/>
+                    </RadioButtonGroup>
+                    <Label text="Sarcini" visible="{datePacientNou>/femeie}"/>
+                    <Input type="Number" visible="{datePacientNou>/femeie}" value="{datePacientNou>/sarcini}"/>
+                    <Label text="Alergii"/>
+                    <RadioButtonGroup id="alergiiID" select="selectAlergii">
+                        <RadioButton text="Nu" />
+                        <RadioButton text="Da" />
+                    </RadioButtonGroup>
+                    <TextArea placeholder="Adaugati alergiile pacientului..." enabled="{datePacientNou>/alergic}" value="{datePacientNou>/alergii}"/>
+                    <Label text="Boli cunoscute"/>
+                    <TextArea value="{datePacientNou>/boli}"/>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <buttons>
+            <Button text="Confirm" press="confirmAdd" type="Emphasized"/>
+            <Button text="Inchide" press="onCancel"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

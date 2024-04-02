@@ -5,8 +5,7 @@ sap.ui.define([
 
     return BaseController.extend("ui5Starter.controller.Login", {
         onInit: async function () {
-            this.onSetModels();
-            let loginModel = new JSONModel();
+            const loginModel = new JSONModel();
             this.getView().setModel(loginModel, "loginModel");
             let oRouter = this.getRouter();
             oRouter.getRoute("Login").attachMatched(this._onObjectMatched, this);
@@ -14,7 +13,6 @@ sap.ui.define([
 
         _onObjectMatched: async function (oEvent) {
             this.clearFields();
-            this.removeChatBot();
         },
 
         clearFields: function () {
@@ -25,60 +23,14 @@ sap.ui.define([
             }
         },
 
-        onGoBackToWelcome: function () {
-            this.getRouter().navTo("Welcome");
-        },
-
         pressLogin: function () {
             debugger
-            this.onLoginPacient();
-            // const data = this.getView().getModel("loginModel").getData();
-            // const email = data.email;
-            // const password = data.password;
-            // const cnp = data.cnp
-            // if (cnp == undefined) {
-            //     this.errorHandler("emptyMessage");
-            // }else if (email == undefined) {
-            //     this.errorHandler("emptyMessage");
-            // } else if (password == undefined) {
-            //     this.errorHandler("passwordMessage");
-            // } else if (!this._validateCNP(cnp)) {
-            //     this.errorHandler("cnpMessage");
-            // } else if (!this._validateEmail(email)) {
-            //     this.errorHandler("emailMessage");
-            // } else {
-            //     this._findUserType(email);
-            // }
+            this.getRouter().navTo("MedicFamilie");
+           
         },
-
-        _validateEmail: function (inputText) {
-            const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return regexEmail.test(inputText);
-        },
-
-        _validateCNP: function (inputText) {
-            debugger
-        },
-
-        _findUserType: function (email) {
-            //de implementat o diferentiere intre conturi
-            this.onLoginPacient();
-        },
-
-        onLoginPacient: async function () {
-            this.getRouter().navTo("Pacient");
-
-            // const data = this.getView().getModel("loginModel").getData();
-
-            // this.post(URLs.getPacientUrl() + "/login", data).then(data => {
-            //     this.userToken = data;
-            //     this.getRouter().navTo("Pacient", {token: this.userToken});
-            // }).catch(err => {
-            //     this.errorHandler("wrongAccount")
-            // })
-        },
-
+        
         goToRegister: function () {
+            debugger
             this.getRouter().navTo("Register");
         }
     });

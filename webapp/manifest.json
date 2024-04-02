@@ -112,6 +112,16 @@
                     "name": "Pacient",
                     "pattern": "Pacient",
                     "target": ["Pacient"]
+                },
+                {
+                    "name": "MedicFamilie",
+                    "pattern": "MedicFamilie",
+                    "target": ["MedicFamilie"]
+                },
+                {
+                    "name": "DetaliiPacient",
+                    "pattern": "DetaliiPacient",
+                    "target": ["DetaliiPacient"]
                 }
             ],
             "targets": {
@@ -134,6 +144,16 @@
                     "viewId": "Pacient",
                     "viewType": "XML",
                     "viewName": "Pacient"
+                },
+                "MedicFamilie": {
+                    "viewId": "MedicFamilie",
+                    "viewType": "XML",
+                    "viewName": "MedicFamilie"
+                },
+                "DetaliiPacient": {
+                    "viewId": "DetaliiPacient",
+                    "viewType": "XML",
+                    "viewName": "DetaliiPacient"
                 }
             }
         }

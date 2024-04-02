@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog id="rezultatId" class="sapUiResponsiveMargin" type="Confirmation">
+        <content>
+            <Text class="sapUiMediumMargin" text="Diagnostic medic / Lista cu rezultatul analizelor / Imagini"/>
+        </content>
+        <buttons>
+            <Button text="Inchide" press="onCancel"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,15 @@
+<mvc:View controllerName="ui5Starter.controller.DetaliiPacient"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:t="sap.ui.table"
+    xmlns:trm="sap.ui.table.rowmodes"
+    xmlns:layout="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form" height="100%">
+
+    <Page title="Prenume NUME" enableScrolling="true" class="sapUiResponsivePadding--header">
+        <content>
+        
+        </content>
+    </Page>
+</mvc:View>

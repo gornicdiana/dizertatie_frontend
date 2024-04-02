@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog id="anulareId" class="sapUiResponsiveMargin" type="Confirmation">
+        <content>
+            <Text class="sapUiMediumMargin" text="Confirmati ca doriti sa anulati aceasta programare?"/>
+        </content>
+        <buttons>
+            <Button text="Confirm" press="confirmareAnulare" type="Reject"/>
+            <Button text="Inchide" press="onCancel"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

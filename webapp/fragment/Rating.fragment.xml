@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog id="rezultatId" class="sapUiResponsiveMargin" type="Confirmation">
+        <content>
+        <VBox>
+            <Label text="Acordati o nota pe baza expetientei cu acest medic" labelFor="RI_default" class="sapUiSmallMargin"/>
+		    <RatingIndicator id="RI_default" maxValue="5" class="sapUiSmallMargin" value="0" tooltip="Rating" />        
+        </VBox>
+        </content>
+        <buttons>
+            <Button text="Confirmare" press="confirmareRating" type="Emphasized"/>
+            <Button text="Inchide" press="onCancel"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

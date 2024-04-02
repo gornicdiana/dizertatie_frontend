@@ -1,7 +1,7 @@
 sap.ui.define(["ui5Starter/controller/BaseController"], function (BaseController) {
     "use strict";
 
-    return BaseController.extend("ui5Starter.controller.Welcome", {
+    return BaseController.extend("ui5Starter.controller.Home", {
 
         onInit: async function () {
             let oRouter = this.getRouter();

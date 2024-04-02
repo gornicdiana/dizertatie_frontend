@@ -1,0 +1,51 @@
+<mvc:View controllerName="ui5Starter.controller.MedicFamilie"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:t="sap.ui.table"
+    xmlns:trm="sap.ui.table.rowmodes"
+    xmlns:layout="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form" height="100%">
+
+    <Page title="Prenume NUME" enableScrolling="true" class="sapUiResponsivePadding--header">
+        <content>
+        <f:SimpleForm id="SimpleFormDisplay480" editable="false" layout="ResponsiveGridLayout" title="Bine ati venit!">
+            <f:content>
+                <Avatar class="sapUiSmallMarginEnd" src="" displaySize="L" />
+                <VBox class="sapUiSmallMarginBeginEnd">
+                    <Label text="Adresa: "/>
+                    <Text text="Strada Livezolor, nr. 73" class="sapUiSmallMarginBottom"/>
+                    <Label text="Program: "/>
+                    <Text text="Luni - Vineri: 08:00 - 16:00" class="sapUiSmallMarginBottom"/>
+                </VBox>
+                <VBox class="sapUiSmallMarginBeginEnd">
+                    <Label text="Numar de telefon:"/>
+                    <Text text="0712345678" class="sapUiSmallMarginBottom"/>
+                    <Label text="Adresa de email:"/>
+                    <Text text="medic_familie@email.ro" class="sapUiSmallMarginBottom"/>
+                </VBox>
+            </f:content>
+            <f:layoutData>
+                <FlexItemData shrinkFactor="0" backgroundDesign="Solid" styleClass="sapContrastPlus"/>
+            </f:layoutData>
+        </f:SimpleForm>
+            <VBox class="sapUiMediumMargin">
+                <List id="pacientsListID" headerText="Pacienti" items="">
+                    <items>
+                        <StandardListItem title="Pacient 1" description="Diagnostic 1" type="Navigation" press="detaliiPacient"/>
+                        <StandardListItem title="Pacient 2" description="Diagnostic 2" type="Navigation" />
+                        <StandardListItem title="Pacient 3" description="Diagnostic 3" type="Navigation" />
+                    </items>
+                    <headerToolbar>
+                        <OverflowToolbar>
+                            <Title text="Pacienti" level="H2" />
+                            <ToolbarSpacer />
+                            <SearchField liveChange="cautaPacient" width="20%"/>
+                            <Button text="Adauga pacient" type="Emphasized" press="adaugaPacient" ariaHasPopup="Dialog"/>
+                        </OverflowToolbar>
+                    </headerToolbar>
+                </List>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

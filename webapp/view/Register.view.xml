@@ -1,4 +1,4 @@
-<mvc:View controllerName="ui5Starter.controller.Home"
+<mvc:View controllerName="ui5Starter.controller.Register"
    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
